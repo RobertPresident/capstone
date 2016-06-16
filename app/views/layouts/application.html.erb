@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capstone</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<form >
+<%= form_tag '/', method: :get, class: "navbar-form navbar-right" do %>
+  <div class="form-group">
+  <%= text_field_tag :search_term, nil, class: "form-control", placeholder: "Search" %>          
+  </div>
+
+  <%= submit_tag "Search", class: "btn btn-default" %>
+<% end %>
+</form>
+
+
+<div class="container">
+    <% flash.each do |name, message| %>
+      <div class="alert alert-<%= name %> alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong><%= name.upcase %>!</strong> <%= message %>
+  </div>    
+    <% end %>
+
+<%= yield %>
+
+</body>
+</html>

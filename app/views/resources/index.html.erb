@@ -1,0 +1,25 @@
+    <%= link_to 'Home', "/resources", class: "btn btn-info" %>
+
+
+<h1>All Resources</h1>
+
+
+ 
+  <% @resources.each do |resource| %>
+        <h3>Company: <%= resource.company %></h3>
+        <h3>Address: <%= resource.street_address %></h3>
+        <h3>City: <%= resource.city %></h3>
+        <h3>State: <%= resource.state_abbr %></h3>
+        <h3>ZipCode: <%= resource.zip_code %></h3>
+        <h3>Website: <%= resource.url %></h3>
+        <h3>Phone Number: <%= resource.phone_number %></h3>
+    
+        <br>
+      
+  <% end %>  
+
+        
+               
+
+
+

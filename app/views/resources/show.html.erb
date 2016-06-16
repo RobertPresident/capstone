@@ -1,0 +1,18 @@
+<h1>Resource
+
+<div class="btn-group pull-right" role="group">
+    <%= link_to 'Edit', "/resources/#{@resource.id}/edit", class: "btn btn-info" %>
+    <%= link_to "Delete", "/resources/#{@resource.id}", method: :delete, class: "btn btn-danger" %>
+    <%= link_to 'Home', "/resources", class: "btn btn-info" %>
+
+</div>
+</h1>
+
+<h3><%= @resource.company %></h3>
+<h3><%= @resource.street_address %></h3>
+<h3><%= @resource.city %></h3>
+<h3><%= @resource.state_abbr %></h3>
+<h3><%= @resource.zip_code %></h3>
+<h3><%= @resource.url %></h3>
+<h3><%= @resource.phone_number %></h3>
+

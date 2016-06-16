@@ -1,0 +1,46 @@
+<h1>Add Resource</h1>
+
+    <%= link_to 'Home', "/resources", class: "btn btn-info" %>
+
+
+
+<%= form_tag '/resources', method: :post do %>
+  <div>
+    <%= label_tag :company %>
+    <%= text_field_tag :company %>
+  </div>  
+
+  <div>
+    <%= label_tag :street_address %>
+    <%= text_field_tag :street_address %>
+  </div>  
+
+  <div>
+    <%= label_tag :city %>
+    <%= text_field_tag :city %>
+  </div>  
+
+  <div>
+    <%= label_tag :state_abbr %>
+    <%= text_field_tag :state_abbr %>
+  </div> 
+
+  <div>
+    <%= label_tag :zip_code %>
+    <%= text_field_tag :zip_code %>
+  </div>
+
+  <div>
+    <%= label_tag :url %>
+    <%= text_field_tag :url %>
+  </div>
+
+  <div>
+    <%= label_tag :phone_number %>
+    <%= text_field_tag :phone_number %>
+  </div> 
+
+  <div>
+    <%= submit_tag 'Submit' %>
+  </div>
+<% end %>

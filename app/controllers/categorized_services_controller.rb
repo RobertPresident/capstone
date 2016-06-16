@@ -1,0 +1,2 @@
+class CategorizedServicesController < ApplicationController
+end
