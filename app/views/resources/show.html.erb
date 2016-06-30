@@ -1,12 +1,11 @@
-<h1>Resource
+<h1>Resource</h1>
 
 <div class="btn-group pull-right" role="group">
-    <%= link_to 'Edit', "/resources/#{@resource.id}/edit", class: "btn btn-info" %>
-    <%= link_to "Delete", "/resources/#{@resource.id}", method: :delete, class: "btn btn-danger" %>
-    <%= link_to 'Home', "/resources", class: "btn btn-info" %>
-
+  <%= link_to 'Edit', "/resources/#{@resource.id}/edit", class: "btn btn-info" %>
+  <%= link_to "Delete", "/resources/#{@resource.id}", method: :delete, class: "btn btn-danger" %>
+  <%= link_to 'Home', "/resources", class: "btn btn-info" %>
 </div>
-</h1>
+
 
 <h3><%= @resource.company %></h3>
 <h3><%= @resource.street_address %></h3>
@@ -15,4 +14,11 @@
 <h3><%= @resource.zip_code %></h3>
 <h3><%= @resource.url %></h3>
 <h3><%= @resource.phone_number %></h3>
+
+<h2><%=  %>resource.id %></h2>
+            <h3>Address: <%= resource.location.display_address %></h3>
+            <h3>Category: <%= resource.categories %></h3>
+            <h3>Rating: <%= resource.rating %></h3>
+            <h3>Website: <%= resource.mobile_url %></h3>
+            <h3>Phone Number: <%= resource.phone %></h3
 

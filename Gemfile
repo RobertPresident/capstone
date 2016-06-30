@@ -21,10 +21,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
+gem 'unirest'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'seed_dump'
+gem "figaro"
 gem 'yelp', require: 'yelp'
+gem 'skrollr-rails'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

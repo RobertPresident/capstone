@@ -8,15 +8,7 @@
 </head>
 <body>
 
-<form >
-<%= form_tag '/', method: :get, class: "navbar-form navbar-right" do %>
-  <div class="form-group">
-  <%= text_field_tag :search_term, nil, class: "form-control", placeholder: "Search" %>          
-  </div>
 
-  <%= submit_tag "Search", class: "btn btn-default" %>
-<% end %>
-</form>
 
 <% if current_user %>
   <li class="active"><a href="#"><%= current_user.email %> <span class="sr-only">(current)</span></a></li>

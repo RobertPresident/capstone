@@ -1,6 +1,5 @@
 class Rating < ActiveRecord::Base
 
-  belong_to :users
-  has_many :users
-  has_many :services
+  belongs_to :user
+  belongs_to :service
 end
