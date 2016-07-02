@@ -7,21 +7,16 @@ class ResourcesController < ApplicationController
     search_key = params[:search_location]
 
     if search_term 
-      search_hash[:category_filter] = search_term
+      search_hash[:term] = search_term
     end
-
-    # if search_key
-    #   location_hash[:location] = search_key
-    # end
     
-
+    location = params[:search_key] || 'Chicago'
              
-    @resources = Yelp.client.search('Chicago', search_hash) 
-    # @resources = Yelp.client.search('Chicago', location_hash) 
+    @resources = Yelp.client.search(location, search_hash) 
   end
     
   def show
-    @resource = Yelp.client.business.find(params[:id])
+    @resource = Yelp.client.business(params[:id]).business
   end
 
 
