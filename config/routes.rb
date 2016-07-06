@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   patch '/resources/:id' => 'resources#update'
 
   delete '/resources/:id' => 'resources#destroy'
+
+  get '/doctors' => 'doctors#index'
+  get '/doctors/:id' => 'doctors#show'
+
+  get '/maps' => 'maps#index'
 end

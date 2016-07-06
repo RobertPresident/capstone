@@ -1,14 +1,156 @@
-100.times do
-  
-
-  Resource.create(
-    company: Faker::Company.name,
-    street_address: Faker::Address.street_address,
-    city: Faker::Address.city,
-    state_abbr: Faker::Address.state_abbr,
-    zip_code: Faker::Address.zip_code,
-    url: Faker::Internet.url,
-    phone_number: Faker::PhoneNumber.phone_number
-    )
-end
-
+Service.create!([
+  {address: "7349 N. Damen", website: "www.asafehaven.com", phone_number: "(312)372-9820", name: "A Safe Haven", city: "Chicago", state: "IL", zip_code: 60645},
+  {address: "740 N. Milwaukee", website: "www.cgla.net", phone_number: "(312)738-2452", name: "Cabrini Green Legal Aid", city: "Chicago", state: "IL", zip_code: 60642},
+  {address: "1523 N. Sedgwick Ave.", website: "www.deborahsplace.org", phone_number: "(312)944-8669", name: "Deborah's Place", city: "Chicago", state: "IL", zip_code: 60610},
+  {address: "5537 North Broadway", website: "www.tpan.com", phone_number: "(312)944-8669", name: "Access at TPAN", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "720 N LaSalle", website: "www.catholiccharities.net", phone_number: "(312) 655-7500", name: "Catholic Charities of Chicago", city: "Chicago", state: "IL", zip_code: 60610},
+  {address: "411 Ravenswood", website: "www.heartlandalliance.org", phone_number: "(773) 728-5960 ext. 621", name: "Heartland Human Care Services", city: "Chicago", state: "IL", zip_code: 60604},
+  {address: "4753 N Broadway", website: "www.ahschicago.org", phone_number: "(773) 728-2235", name: "Asian Human
+    Services", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "5250 N. Broadway", website: "www.cjrchicago.org", phone_number: "(773) 559-1751", name: "Coalition for Justice
+    and Respect", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "7648 North Paulina St.", website: "www.howardarea.org", phone_number: "(773) 262-6622", name: "Howard Area
+    Community Center", city: "Chicago", state: "IL", zip_code: 60626},
+  {address: "5249 N. Ashland Ave.", website: "www.breakthrough.org", phone_number: "(773) 989-4383", name: "Breakthrough Urban Ministries", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "4628 North Clifton Ave.", website: "www.ccolife.org", phone_number: "(773) 271-8163", name: "Cornerstone
+    Transitional Housing (CSAC)", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "4628 N. Clifton Ave.", website: "www.howardbrown.org", phone_number: "(773) 388-1600", name: "Howard Brown
+    Health Center", city: "Chicago", state: "IL", zip_code: 60613},
+  {address: "1925 N. Clybourn", website: "www.chicagohouse.org", phone_number: "(773) 388-1600", name: "IFOUR Project
+    Chicago House", city: "Chicago", state: "IL", zip_code: 60614},
+  {address: "600 W. Fullerton", website: "www.lpsconline.org", phone_number: "(773) 549-6111", name: "Lincoln Park
+    Community Shelter", city: "Chicago", state: "IL", zip_code: 60614},
+  {address: "646 N. State St.", website: "www.pgm.org", phone_number: "(312) 922-1461", name: "Pacific Garden
+    Mission", city: "Chicago", state: "IL", zip_code: 60654},
+  {address: "4554 N. Broadway", website: "www.inspirationcorp.org", phone_number: "(773) 878-0981", name: "Inspiration
+    Corporation", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "1126 N Maple Ave", website: "www.chicagona.org", phone_number: "(708) 450-1880", name: "Narcotics
+    Anonymous", city: "La Grange", state: "IL", zip_code: 60526},
+  {address: "28 N. Clark St.", website: "www.probono.net", phone_number: "(312) 827-2420", name: "Pro Bono Advocates", city: "Chicago", state: "IL", zip_code: 60602},
+  {address: "111 W. Jackson Blvd.", website: "www.lafchicago.org", phone_number: "(312) 341-1070", name: "Legal Assistance
+    Foundation", city: "Chicago", state: "IL", zip_code: 60603},
+  {address: "1409 N. Pulaski", website: "www.na.org", phone_number: "(708) 848-4884", name: "Narcotics
+    Anonymous Meeting", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "1500 N. Halsted", website: "www.tasc.org", phone_number: "(312) 787-0208", name: "TASC, Inc. of Illinois", city: "Chicago", state: "IL", zip_code: 60622},
+  {address: "5537 N. Broadway", website: "www.tpan.org", phone_number: "(773) 989-9400", name: "Test Positive Aware
+    Network", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "4426 N. Ravenswood", website: "www.theenterprisingkitchen.org", phone_number: "(773) 506-3880 ext. 228", name: "The Enterprising Kitchen, Inc.", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "845 W. Wilson Ave", website: "www.cityofchicago.org/city/en.html", phone_number: "(312) 744-1935", name: "Uptown Neighborhood Health Center", city: "Chicago", state: "IL", zip_code: 60640},
+  {address: "400 W. 76th Street", website: "www.akamworks.org", phone_number: "(773) 488-2960", name: "A Knock at Midnight", city: "Chicago", state: "IL", zip_code: 60620},
+  {address: "221 W. 58th Street", website: "www.4mybrothers.org", phone_number: "(773) 855-9900", name: "Brothers Health
+    Collective", city: "Chicago", state: "IL", zip_code: 60637},
+  {address: "6301 S. Halsted", website: "www.chicagojobs.org/cgi-sys/suspendedpage.cgi", phone_number: "(773) 783-0441", name: "Chicagoland Youth and Adult Training Center", city: "Chicago", state: "IL", zip_code: 60621},
+  {address: "411 S. Wells", website: "www.aidschicago.org", phone_number: "(312) 922-2322", name: "AIDS Foundation of Chicago", city: "Chicago", state: "IL", zip_code: 60607},
+  {address: "1120 W. 79th Street", website: "www.catholiccharities.net", phone_number: "(773) 846-3018", name: "Catholic Charities", city: "Chicago", state: "IL", zip_code: 60620},
+  {address: "9718 S. Halsted", website: "www.cchc-online.org", phone_number: "(773) 298-2073", name: "Christian
+    Community Health Center", city: "Chicago", state: "IL", zip_code: 60628},
+  {address: "233 W. Joe Orr Rd.", website: "www.auntmarthas.org", phone_number: "(708) 825- 3855", name: "Aunt Martha’s Youth Service Center", city: "Chicago Heights", state: "IL", zip_code: 60411},
+  {address: "4819 S. Ashland", website: "local.townsquarepublications.com" , phone_number: "(773) 247-8500", name: "Center For Social Adjustment & Reentry (CORE)", city: "Chicago", state: "IL", zip_code: 60609},
+  {address: "11444 S. Halsted", website: "www.capsinc.org", phone_number: "(773) 568-1782", name: "Community
+    Assistance Programs (CAPS)", city: "Chicago", state: "IL", zip_code: 60628},
+  {address: "6950 S. Wenworth Ave", website: "www.btgcl.org", phone_number: "(773) 667-7644", name: "Bridging the Gap
+    Communal Living", city: "Chicago", state: "IL", zip_code: 60621},
+  {address: "407 W. 104th St.", website: "www.chicap.org" , phone_number: "(708) 932-8334", name: "Chicagoland
+    Outreach Carpentry School", city: "Chicago", state: "IL", zip_code: 60628},
+  {address: "12231 S. Emerald", website: "www.csls.org", phone_number: "(773) 291-0482", name: "Community
+    Supportive Living Systems (CSLS)", city: "Chicago", state: "IL", zip_code: 60628},
+  {address: "3901 South State St.", website: "www.ccc.edu/colleges/kennedy/departments/pages/dawson-technical-institute.aspx", phone_number: "(773) 451-2122", name: "Dawson Technical Institute of Kennedy King College", city: "Chicago", state: "IL", zip_code: 60609},
+  {address: "2255 E. 75th Street", website: "www.featherfirst.org", phone_number: "(773) 721-7088", name: "Featherfirst Housing Locator Program", city: "Chicago", state: "IL", zip_code: 60649},
+  {address: "7331 S. Stony Island", website: "www.jacksonparkhospital.org", phone_number: "(312) 213-8161", name: "Jackson Park Hospital", city: "Chicago", state: "IL", zip_code: 60649},
+  {address: "10 W. 35th St", website: "www.dehix.com", phone_number: "(312) 545-3688", name: "DEHIX", city: "Chicago", state: "IL", zip_code: 60616},
+  {address: "6634 S. Drexel", website: "www.henryshouse.org", phone_number: "(773) 752-1300", name: "Henry’s Sober Living
+    House", city: "Chicago", state: "IL", zip_code: 60637},
+  {address: "23 W.115th St.", website: "www.jorayhouse.com", phone_number: "(773) 568-2008", name: "Jo-Ray House", city: "Chicago", state: "IL", zip_code: 60628},
+  {address: "10 West 35th, 11th Floor", website: "www.ef.com" , phone_number: "(312) 567-1410", name: "E.F. Ghoughan and Associates, Inc.", city: "Chicago", state: "IL", zip_code: 60616},
+  {address: "340 E. 51st", website: "www.hrdi.org", phone_number: "(773) 660-4630", name: "Human Resources
+    Development Institute, Inc.", city: "Chicago", state: "IL", zip_code: 60615},
+  {address: "1701 W. Monterey", website: "www.luck.com" , phone_number: "(773) 233-5850", name: "Luck Care Center", city: "Chicago", state: "IL", zip_code: 60643},
+  {address: "324 E. 75th", website: "www.exodus-chicago.org", phone_number: "(773) 892-2640", name: "Exodus Renewal
+    Society", city: "Chicago", state: "IL", zip_code: 60619},
+  {address: "33 South State", website: "www.ides.state.il.us", phone_number: "(312) 793-2789", name: "Illinois Department
+    of Employment Security", city: "Chicago", state: "IL", zip_code: 60603},
+  {address: "3722 S. Indiana Ave.", website: "www.matthewhousechicago.org", phone_number: "(773) 536-2528", name: "Matthew House", city: "Chicago", state: "IL", zip_code: 60653},
+  {address: "10 W. 35th 9th Floor", website: "www.mwipm.com", phone_number: "(708) 339-2400", name: "Men and Women in Prison Ministries", city: "Chicago", state: "IL", zip_code: 60616},
+  {address: "500 East 51st Street", website: "www.cookcountyhhs.org/locations/provident-hospital", phone_number: "(312) 572-2734", name: "Provident Hospital", city: "Chicago", state: "IL", zip_code: 60615},
+  {address: "3062 E. 91st St.", website: "www.metrofamily.org", phone_number: "(773) 371-2920", name: "Metropolitan Family Services", city: "Chicago", state: "IL", zip_code: 60617},
+  {address: "114 East 47th", website: "www.saving.com" , phone_number: "(773) 536-3062", name: "Saving Our Seed", city: "Chicago", state: "IL", zip_code: 60653},
+  {address: "1000 E. 87th St.", website: "www.bobl.org", phone_number: "(773) 978-0868", name: "My Sisters Keeper- Black on Black Love Organization", city: "Chicago", state: "IL", zip_code: 60619},
+  {address: "2259 E. 73rd Street", website: "www.nbrhi.org", phone_number: "(773) 437-3129", name: "New Beginnings Housing Program", city: "Chicago", state: "IL", zip_code: 60649},
+  {address: "1822 W. 63rd St.", website: "www.saferfoundation.org", phone_number: "(773) 925-8231", name: "The Safer Foundation", city: "Chicago", state: "IL", zip_code: 60636},
+  {address: "6300 S. Woodlawn", website: "www.projectbrotherhood.net", phone_number: "(312) 747-7732", name: "Project Brotherhood Woodlawn Health Center", city: "Chicago", state: "IL", zip_code: 60649},
+  {address: "180 W. Washington", website: "www.asafehaven.com", phone_number: "(312) 372-6707", name: "A Safe Haven", city: "Chicago", state: "IL", zip_code: 60602},
+  {address: "3333 W. Arthington", website: "www.bayard.com" , phone_number: "(773) 826-8355", name: "Bayard Rustin Access Center", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "10 South Kedzie", website: "www.ccilworks.org" , phone_number: "(312) 746-5400", name: "Chicago Christian Industrial League/CCIL", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "3800 W. Madison", website: "www.accesscommunityhealth.net" , phone_number: "(773) 826-6000", name: "Access Community Health", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "4950 W. Thomas", website: "www.bethelnewlife.org" , phone_number: "(773) 473-7870", name: "Bethel New Life", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "703 W. Monroe", website: "www.cleanslatechicago.org" , phone_number: "(773) 858-7611", name: "Cleanslate", city: "Chicago", state: "IL", zip_code: 60661},
+  {address: "1116 N. Kedzie", website: "www.assoicationhouse.org" , phone_number: "(773) 772-7170", name: "Association House of Chicago", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "1668 W. Ogden Ave.", website: "www.catherdralshelter.org" , phone_number: "(312) 997-2222", name: "Cathedral Shelter", city: "Chicago", state: "IL", zip_code: 60607},
+  {address: "7723 S. Kedzie", website: "www.catherdralshelter.org" , phone_number: "(773) 863-5089", name: "Community Assistance Programs", city: "Chicago", state: "IL", zip_code: 60652},
+  {address: "4800 W. Chicago Ave.", website: "www.cookcountyhhs.org/health-centers/austin-health-center/" , phone_number: "(773) 826-9919", name: "Austin Health Care Center", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "321 North Mason", website: "www.cookcountyhhs.org/health-centers/austin-health-center/" , phone_number: "(773) 287-8393", name: "Concerned Citizens Mothers House II", city: "Chicago", state: "IL", zip_code: 60644},
+  {address: "2750 West North Ave.", website: "www.eriefamilyhealth.org" , phone_number: "(312) 666-3494", name: "Erie Family Health Center", city: "Chicago", state: "IL", zip_code: 60647},
+  {address: "3333 W. Arthington", website: "www.fatherswhocare.us" , phone_number: "(773) 638-2052", name: "Fathers Who Care", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "2021 W. Fulton St.", website: "www.gwtp.org" , phone_number: "(312) 563-9570", name: "Greater West Town Community Vocational Training and Job Placement", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "3333 W. Arthington", website: "www.gwtp.org" , phone_number: "(773) 826-9833", name: "Greater Westside Development Corp.", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "932 W. Washington", website: "www.hcenter.org" , phone_number: "(312) 226.7984", name: "Haymarket Center", city: "Chicago", state: "IL", zip_code: 60607},
+  {address: "2101 S. Kedzie", website: "www.imfjobtraining.org" , phone_number: "(773) 277-2343", name: "Illinois Manufacturing Foundation", city: "Chicago", state: "IL", zip_code: 60623},
+  {address: "2622 W. Cermak Rd.", website: "www.greathopefamilycenter.org" , phone_number: "(773) 247-4458", name: "Great Hope Family Center", city: "Chicago", state: "IL", zip_code: 60608},
+  {address: "3828 W. Taylor", website: "www.recovergateway.org" , phone_number: "(773) 826-1916", name: "Gateway Foundation", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "790 N. Milwaukee Ave.", website: "www.gwtp.org" , phone_number: "(312) 432-9920", name: "Greater West Town Community Development Project", city: "Chicago", state: "IL", zip_code: 60622},
+  {address: "5840 W. Chicago Ave.", website: "www.chicagofaithinc.org" , phone_number: "(773) 626-2429", name: "F.A.I.T.H., Inc.", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "2715 W. Harrison St.", website: "www.franoutreach.org" , phone_number: "(773) 265-6683", name: "Franciscan Outreach House of Joseph and Mary", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "3726 W. Flournoy", website: "www.nlen.org" , phone_number: "(773) 265-7948", name: "North Lawndale Employment Network", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "4628 W. Washington", website: "www.phalanxgrpservices.org" , phone_number: "(773) 261-5600", name: "Phalanx Family Services", city: "Chicago", state: "IL", zip_code: 60624},
+  {address: "18 S. Michigan Ave.", website: "www.plannedparenthood.org" , phone_number: "(312) 592-6828", name: "Planned Parenthood Chicago Area", city: "Chicago", state: "IL", zip_code: 60603},
+  {address: "53 W. Jackson Blvd.", website: "www.salud-latina.org" , phone_number: "(312) 913-3001", name: "Salud Latina", city: "Chicago", state: "IL", zip_code: 60604},
+  {address: "1515 W. Monroe St.", website: "www.salarmychicago.org" , phone_number: "(312) 421-5753", name: "Salvation Army", city: "Chicago", state: "IL", zip_code: 60607},
+  {address: "2100 W. Warren Blvd.", website: "www.slministries.org" , phone_number: "(312) 226-6270", name: "St. Leonard’s Ministries", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "1701 S. 1st Ave, Suite 20", website: "www2.tasc.org/program/winners-circles" , phone_number: "(708) 344-8280", name: "TASC Winners’ Circle", city: "Maywood", state: "IL", zip_code: 60153},
+  {address: "703 W. Monroe", website: "www.thecaraprogram.org" , phone_number: "(312) 798-3309", name: "The Cara Program", city: "Chicago", state: "IL", zip_code: 60661},
+  {address: "2020 W. Harrison", website: "www.thecaraprogram.org" , phone_number: "(312) 798-3309", name: "The Core Center", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "808 S. Kedzie", website: "www.saferfoundation.org" , phone_number: "(773) 533-3091", name: "The Safer Foundation", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "3334 W. Carroll", website: "www.tiwalade.com" , phone_number: "(773) 823-1116", name: "Tiwalade-Substance for Living Women Re-entry Programs", city: "Chicago", state: "IL", zip_code: 60612},
+  {address: "5816 W. Division St.", website: "www.healthauthority.org" , phone_number: "(773) 786-0226", name: "Westside Health Authority", city: "Chicago", state: "IL", zip_code: 60651},
+  {address: "1740 Ridge Ave.", website: "www.behiv.org" , phone_number: "(847) 475-2115", name: "Better Existence with HIV", city: "Evanston", state: "IL", zip_code: 60201},
+  {address: "113 Custer St.", website: "www.carepointoutreach.org" , phone_number: "(847) 425-3606", name: "Carepoint Adult, Child, and Family Services", city: "Evanston", state: "IL", zip_code: 60202},
+  {address: "1458 Chicago Avenue", website: "www.cfthinc.org" , phone_number: "(847) 424-0945", name: "Connections for the Homeless", city: "Evanston", state: "IL", zip_code: 60201},
+  {address: "318 Madison St", website: "www.accesscommunityhealth.net" , phone_number: "(847) 424-0945", name: "Alma Family Health Center", city: "Maywood", state: "IL", zip_code: 60153},
+  {address: "3120 South Marion St.", website: "www.thrivecc.org" , phone_number: "(847) 424-0945", name: "Thrive Counceling Center", city: "Oak Park", state: "IL", zip_code: 60302},
+  {address: "1200 South First Ave.", website: "www.mental-health-facilities.healthgrove.com/l/4528/Madden-Mental-Health-Center", phone_number: "(708) 338-7202", name: "Madden Mental Health Center", city: "Hines", state: "IL", zip_code: 60141},
+  {address: "1851 S. 9th Ave.", website: "www.westsuburabanpads.org", phone_number: "(708) 338-1724", name: "West Suburban PADS", city: "Maywood", state: "IL", zip_code: 60153},
+  {address: "12553 S. Alpine Dr.", website: "www.asafehaven.com", phone_number: "(312) 372-3820", name: "A Safe Haven", city: "Alsip", state: "IL", zip_code: 60803},
+  {address: "1645 Cottage Grove", website: "www.cookcountyhhs.org/health-centers/cottage-grove-health-center/", phone_number: "(708) 753-5800", name: "Cottage Grove Health Center of Cook County", city: "Ford Heights", state: "IL", zip_code: 60411},
+  {address: "152 West Lincoln Hwy.", website: "www.accesscommunityhealth.net", phone_number: "(708) 754-9687", name: "Family Health Society", city: "Chicago Heights", state: "IL", zip_code: 60411},
+  {address: "1429 Regent Lane", website: "www.fhhc.com" , phone_number: "(708) 758-4000", name: "Ford Heights Hope Center", city: "Ford Heights", state: "IL", zip_code: 60411},
+  {address: "One Ingalls Drive", website: "www.gpsbh.org" , phone_number: "(708) 331-0500", name: "Grand Prairie Services", city: "Harvey", state: "IL", zip_code: 60426},
+  {address: "13922 Lincoln Ave.", website: "www.resurrection.com" , phone_number: "(708) 849-4418", name: "Resurrection House, Inc.", city: "Dolton", state: "IL", zip_code: 60419},
+  {address: "13450 S. Kedzie Ave.", website: "www.rhc.com" , phone_number: "(708) 293-8100", name: "Robbins Health Center of Cook County", city: "Robbins", state: "IL", zip_code: 60472},
+  {address: "178 E. 155th St.", website: "www.ymcachgo.org" , phone_number: "(708) 331-6500", name: "South Suburban YMCA", city: "Harvey", state: "IL", zip_code: 60426},
+  {address: "182 E 154th St", website: "www.saferfoundation.org" , phone_number: "(708) 339-1372", name: "The Safer Foundation", city: "Harvey", state: "IL", zip_code: 60426},
+  {address: "650 East Phoenix Dr.", website: "www.wwhc.com" , phone_number: "(708) 225-9900", name: "Woody Winston Health Center of Cook County", city: "Phoenix", state: "IL", zip_code: 60426},
+  {address: "611 E. Cass St.", website: "www.ccj.com" , phone_number: "(815) 774-4663", name: "Catholic Charities of Joliet", city: "Joliet", state: "IL", zip_code: 60423},
+  {address: "350 E. Washington St.", website: "www.morningstarmission.com" , phone_number: "(815) 722-5780", name: "Morning Star Mission", city: "Joliet", state: "IL", zip_code: 60433},
+  {address: "37 E. Cass Street", website: "www.prm.com" , phone_number: "(815) 723-8998", name: "Prison Release Ministry", city: "Joliet", state: "IL", zip_code: 60434},
+  {address: "437 E. Galena Blvd", website: "www.saa.com" , phone_number: "(630) 897-7304", name: "The Salvation Army Aurora", city: "Aurora", state: "IL", zip_code: 60505},
+  {address: "437 E. Galena Blvd", website: "www.aa.com" , phone_number: "(630) 653-6556", name: "Alcoholics Anonymous", city: "Wheaton", state: "IL", zip_code: 60187},
+  {address: "421 N. County Farm Rd.", website: "www.co.dupage.il.us" , phone_number: "(630) 407-6500", name: "DuPage County Human Servicess", city: "Wheaton", state: "IL", zip_code: 60187},
+  {address: "111 N. County Farm Rd.", website: "www.dupagehealth.org" , phone_number: "(630) 407-6500", name: "DuPage County Health Dept.", city: "Wheaton", state: "IL", zip_code: 60187},
+  {address: "705 W. Liberty", website: "www.dupagepads.org" , phone_number: "(630) 682-3846", name: "DuPage P.A.D.S.", city: "Wheaton", state: "IL", zip_code: 60187},
+  {address: "618B W. 5th Ave.", website: "www.napervillecares.org" , phone_number: "(630) 369-0200", name: "Naperville Cares", city: "Naperville", state: "IL", zip_code: 60563},
+  {address: "618B W. 5th Ave.", website: "www.aak.com" , phone_number: "(630) 377-6610", name: "Alcoholics Anonymous Kane and Kendall Counties", city: "Geneva", state: "IL", zip_code: 60134},
+  {address: "256 East Chicago St.", website: "www.apif.com" , phone_number: "(630) 377-6610", name: "All People’s Interfaith Food Pantry", city: "Elgin", state: "IL", zip_code: 60120},
+  {address: "659 South River St.", website: "www.hesedhouse.org" , phone_number: "(630) 377-6610", name: "Hesed House, Inc.", city: "Aurora", state: "IL", zip_code: 60506},
+  {address: "113 South Grove Ave.", website: "www.kanehealth.com" , phone_number: "(847) 695-0848", name: "Kane County Health Department", city: "Elgin", state: "IL", zip_code: 60120},
+  {address: "214 Walnut St.", website: "www.lazarushouseonline.com" , phone_number: "(630) 587-2144", name: "Lazarus House", city: "St.Charles", state: "IL", zip_code: 60174},
+  {address: "30 S. Stolp Ave. Suite 312", website: "www.saferfoundation.org" , phone_number: "(630) 844-1476", name: "The Safer Foundation", city: "Aurora", state: "IL", zip_code: 60506},
+  {address: "6213 Factory Rd. Suite A", website: "www.h-o-s.org" , phone_number: "(815) 444-1660", name: "Home of the Sparrow", city: "Crystal Lake", state: "IL", zip_code: 60014},
+  {address: "14411 Kishwaukee Valley", website: "www.h-o-s.org" , phone_number: "(815) 338-5231", name: "McHenry County P.A.D.S.", city: "Woodstock", state: "IL", zip_code: 60098},
+  {address: "109 S. Jefferson St.", website: "www.tmc.com" , phone_number: "(312) 345-2365" , name: "Thresholds McHenry County", city: "Woodstock", state: "IL", zip_code: 60098},
+  {address: "826 North Ave.", website: "www.alexianbrothers.org" , phone_number: "(847) 782-8015" , name: "Alexian Brothers- The Harbor", city: "Waukegan", state: "IL", zip_code: 60085},
+  {address: "431 N Genesee Street", website: "www.bamhouse.org" , phone_number: "(312) 307-2454" , name: "BAM House, Inc.", city: "Waukegan", state: "IL", zip_code: 60085},
+  {address: "1204 Logan Ave", website: "www.bcd.com" , phone_number: "(815) 544-2951" , name: "Boone County Department of Health", city: "Belvidere", state: "IL", zip_code: 61008},
+  {address: "3010 Grand Avenue", website: "www.lchd.com"  , phone_number: "(847) 360-6769" , name: "Lake County Health Department", city: "Waukegan", state: "IL", zip_code: 60085},
+  {address: "149 S. Genesee St", website: "www.sh.com"  , phone_number: "(847) 244-4900" , name: "Staben House", city: "Waukegan", state: "IL", zip_code: 60085},
+  {address: "149 S. Genesee St.", website: "www.waukegantownship.com", phone_number: "(847) 244-4900" , name: "Waukegan Township", city: "Waukegan", state: "IL", zip_code: 60085}
+])

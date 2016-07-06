@@ -53,8 +53,21 @@
                                 <i class="fa fa-youtube-play"></i>
                                 <i class="fa fa-youtube-play"></i>
                             </a>
-                            <a href="#" class="appointment">make an appointment</a>
+                            <% if current_user %>
+  <li class="active"><a href="#"><%= current_user.email %> <span class="sr-only">(current)</span></a></li>
+
+<% end %>
+
+<% if user_signed_in? %>
+  <li><%= link_to 'Sign Out', '/users/sign_out', method: :delete %></li>
+<% else %>
+
+<li><%= link_to 'Sign In', '/users/sign_in'%></li>
+<li><%= link_to 'Sign Up', '/users/sign_up'%></li>
+<% end %>
                         </div>
+
+                        
 
                     </div>
                 </div>
@@ -73,26 +86,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="/">Home</a></li>
                         <li><a href="medical-about.html">About</a></li>
-                        <li><a href="medical-doctors.html">Doctors</a></li>
+                        <li><a href="/doctors">Doctors</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="medical-services.html">Cancer care</a></li>
-                                <li><a href="medical-services.html">Rehabilitation Center</a></li>
-                                <li><a href="medical-services.html">Transplant Services</a></li>
-                                <li><a href="medical-services.html">Emergency Services</a></li>
+                                <li><a href="medical-services.html">Housing</a></li>
+                                <li><a href="medical-services.html">Education and Employment Services</a></li>
+                                <li><a href="medical-services.html">Medical Care</a></li>
+                                <li><a href="medical-services.html">Counseling, Mental Health Services, Support Groups</a></li>
+                                <li><a href="medical-services.html">Case Management, Referrals, and Supportive Services</a></li>
+                                <li><a href="medical-services.html">Food and Clothing Assistance</a></li>
 
                             </ul>
                         </li>
-                        <li><a href="medical-gallery.html">Gallery</a></li>
-                        <li><a href="medical-Blog.html">Blog</a></li>
-                        <li><a href="medical-contact.html">Contact us</a></li>
+                        
                     </ul>
                 </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
@@ -113,8 +125,8 @@
                              data-speed="1000"
                              data-start="1000"
                              data-easing="easeOutExpo">
-                            We Care about <br>
-                            <span class="colored-text">Your Family</span>
+                            SHIELD <br>
+                            <span class="colored-text">Our Youth</span>
                         </div>
 
 
@@ -125,8 +137,8 @@
                              data-speed="1000"
                              data-start="1800"
                              data-easing="easeOutExpo">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br>
-                            lectus. Cras porta nisl at tincidunt tincidunt.  
+                            Strategic Hazard Intervention for Early Life Detainees 
+                          
                         </div>
                         <div class="caption sfb rev-buttons tp-resizeme"
                              data-x="50"
@@ -134,7 +146,6 @@
                              data-speed="500"
                              data-start="1800"
                              data-easing="Sine.easeOut">
-                            <a href="#" class="btn btn-theme-bg btn-lg">Learn more <i class="pe-7s-right-arrow"></i></a>
                         </div>
 
 
@@ -153,8 +164,7 @@
                              data-speed="1000"
                              data-start="1000"
                              data-easing="easeOutExpo">
-                            Experienced team that<br>
-                            <span class="colored-text">You can trust</span>
+                            <span class="colored-text">Begin the path to a healthy life </span>
                         </div>
 
 
@@ -165,8 +175,7 @@
                              data-speed="1000"
                              data-start="1800"
                              data-easing="easeOutExpo">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br>
-                            lectus. Cras porta nisl at tincidunt tincidunt.  
+                            
                         </div>
                         <div class="caption sfb rev-buttons tp-resizeme"
                              data-x="50"
@@ -174,7 +183,7 @@
                              data-speed="500"
                              data-start="1800"
                              data-easing="Sine.easeOut">
-                            <a href="#" class="btn btn-theme-bg btn-lg">Meet the doctors <i class="pe-7s-right-arrow"></i></a>
+                            <a href="/doctors" class="btn btn-theme-bg btn-lg">Meet the doctors <i class="pe-7s-right-arrow"></i></a>
                         </div>
                     </li>
                     <!-- SLIDE -->
@@ -189,7 +198,7 @@
                              data-speed="1000"
                              data-start="1000"
                              data-easing="easeOutExpo">
-                            Top <span class="colored-text">quality services</span>
+                            A Variety <span class="colored-text">of quality services</span>
 
                         </div>
 
@@ -201,8 +210,7 @@
                              data-speed="1000"
                              data-start="1800"
                              data-easing="easeOutExpo">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  <br>
-                            lectus. Cras porta nisl at tincidunt tincidunt.  
+                             
                         </div>
                         <div class="caption sfb rev-buttons tp-resizeme"
                              data-x="50"
@@ -223,9 +231,9 @@
         <div class="container">
             <div class="row center-title">
                 <div class="col-md-8 col-md-offset-2 clearfix text-center wow animated fadeInUp">
-                    <h2>Health and Medical HTML5 Theme</h2>
+                    <h2>Important Re-entry Tools</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        
                     </p>
                     <!--                   -->
                 </div>
@@ -234,43 +242,42 @@
                 <div class="col-sm-6 col-md-3 margin30">
                     <div class="service-box wow animated fadeIn" data-wow-delay="0.1s">
                         <i class="pe-7s-paint-bucket"></i>
-                        <h4>Special care unit</h4>
+                        <h4><%= link_to 'Expungement', 'http://www.illinois.gov/osad/Pages/default.aspx' %></h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+                            People with qualifying arrests and convictions may petition the court of their sentencing county to expunge or seal their records. 
                         </p>
                     </div>
                 </div><!--service column-->
                 <div class="col-sm-6 col-md-3 margin30">
                     <div class="service-box wow animated fadeIn" data-wow-delay="0.2s">
                         <i class="pe-7s-users"></i>
-                        <h4>Caring Staff</h4>
+                        <h4><%= link_to 'IDES Ex-Offender', 'http://www.ides.illinois.gov/Pages/default.aspx' %></h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+                            The Re-entry Employment Service Program (RESP) serves Illinoisans who are currently, or have in the past been, subject to any stage of the criminal justice process and who require assistance in overcoming barriers to employment resulting from a record of arrest or conviction. 
                         </p>
                     </div>
                 </div><!--service column-->
                 <div class="col-sm-6 col-md-3 margin30">
                     <div class="service-box wow animated fadeIn" data-wow-delay="0.3s">
                         <i class="pe-7s-loop"></i>
-                        <h4>Medical Counseling</h4>
+                        <h4><%= link_to 'Employment Resources', 'http://hirenetwork.org/home' %></h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+                            Established by the Legal Action Center in 2001, the National Helping Individuals with criminal records Re-enter through Employment (H.I.R.E.) Network is both a national clearinghouse for information and an advocate for policy change. 
                         </p>
                     </div>
                 </div><!--service column-->
                 <div class="col-sm-6 col-md-3 margin30">
                     <div class="service-box wow animated fadeIn" data-wow-delay="0.4s">
                         <i class="pe-7s-call"></i>
-                        <h4>Emergency Services </h4>
+                        <h4><%= link_to 'Justice Center', 'https://csgjusticecenter.org/reentry/about/' %></h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+                            The Reentry Policy Council is a national project coordinated by The Council of State Governments (CSG) Justice Center, a national nonprofit organization that serves policymakers at the local, state, and federal levels from all branches of government. 
                         </p>
                     </div>
                 </div><!--service column-->
             </div>
             <div class="divide20"></div>
             <div class="text-center">
-                <a href="#" class="btn btn-lg btn-theme-bg">View our Services <i class="pe-7s-right-arrow"></i></a>
             </div>
         </div>
         <div class="divide60"></div>
@@ -281,9 +288,9 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="center-title">
                             <i class="pe-7s-users"></i>
-                            <h2>Meet our <strong>Medical Specialists</strong></h2>
+                            <h2>Meet some <strong>Infectious Disease Specialists</strong></h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                
                             </p>
                         </div>
                     </div>
@@ -291,10 +298,10 @@
                 <div class="row">
                     <div class="col-sm-6 col-sm-3 margin30">
                         <div class="team-col wow animated fadeInLeft" data-wow-delay="0.1s">
-                            <a href="#"><img src="img/medical/team-1.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="img/medical/drz.jpg" class="img-responsive" alt=""></a>
                             <div class="divide20"></div>
-                            <h3>Dr. Rayan Scott</h3>
-                            <em>Cancer Specialist</em>
+                            <h3>Dr. Chad Zawitz</h3>
+                            <em>Infectious Disease Specialist</em>
                             <div class="divide20"></div>
                             <ul class="list-inline">
                                 <li>
@@ -320,10 +327,10 @@
                     </div><!--col-md-3 col-sm-6--> 
                     <div class="col-sm-6 col-sm-3 margin30">
                         <div class="team-col wow animated fadeInLeft" data-wow-delay="0.2s">
-                            <a href="#"><img src="img/medical/team-2.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="img/medical/drhines.jpg" class="img-responsive" alt=""></a>
                             <div class="divide20"></div>
-                            <h3>Dr. Dale Smith</h3>
-                            <em>Cancer Specialist</em>
+                            <h3>Dr. David Hines</h3>
+                            <em>Infectious Disease Specialist</em>
                             <div class="divide20"></div>
                             <ul class="list-inline">
                                 <li>
@@ -349,10 +356,10 @@
                     </div><!--col-md-3 col-sm-6-->
                     <div class="col-sm-6 col-sm-3 margin30">
                         <div class="team-col wow animated fadeInLeft" data-wow-delay="0.3s">
-                            <a href="#"><img src="img/medical/team-3.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="img/medical/drjohnson.jpg" class="img-responsive" alt=""></a>
                             <div class="divide20"></div>
-                            <h3>Dr. Nikita Merry</h3>
-                            <em>Dental Specialist</em>
+                            <h3>Dr. Daniel Johnson</h3>
+                            <em>Infectious Disease Specialist</em>
                             <div class="divide20"></div>
                             <ul class="list-inline">
                                 <li>
@@ -378,10 +385,10 @@
                     </div><!--col-md-3 col-sm-6-->
                     <div class="col-sm-6 col-sm-3 margin30">
                         <div class="team-col wow animated fadeInLeft" data-wow-delay="0.4s">
-                            <a href="#"><img src="img/medical/team-4.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="img/medical/drwah.jpg" class="img-responsive" alt=""></a>
                             <div class="divide20"></div>
-                            <h3>Dr. Seema Sharma</h3>
-                            <em>Cancer Specialist</em>
+                            <h3>Dr. Wahab Brobbey</h3>
+                            <em>Infectious Disease Specialist</em>
                             <div class="divide20"></div>
                             <ul class="list-inline">
                                 <li>
@@ -414,29 +421,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 margin30">
-                        <h3>Take a tour of our medical facility</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Get Tested</h3>
+                        <p class="lead"></p>
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="http://player.vimeo.com/video/57175742"></iframe>
+                            <iframe src="http://player.vimeo.com/video/50265672"></iframe>
                         </div>
                     </div>
                     <div class="col-sm-6 margin30">
-                        <h3>Our Departments</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Infectious Disease Information</h3>
+                        <p class="lead"></p>
 
                         <div class="panel-group collapse-colored-col" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading active">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                            Primary health care
+                                            HIV/AIDS
                                         </a>
                                     </h4>
                                 </div><!-- /.panel-heading -->
 
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio augue, scelerisque eget erat vel, hendrerit feugiat dui. Quisque velit erat, eleifend sed ligula vel, bibendum accumsan justo. Sed in justo ac massa suscipit tincidunt. Integer ac mauris ut dolor lobortis ullamcorper. Duis facilisis vitae odio ut commodo. Etiam et enim est. Sed ultrices hendrerit euismod. Aliquam lobortis rutrum adipiscing.
+                                        HIV is a virus spread through certain body fluids that attacks the body’s immune system, specifically the CD4 cells, often called T cells. Over time, HIV can destroy so many of these cells that the body can’t fight off infections and disease. These special cells help the immune system fight off infections. Untreated, HIV reduces the number of CD4 cells (T cells) in the body. This damage to the immune system makes it harder and harder for the body to fight off infections and some other diseases. Opportunistic infections or cancers take advantage of a very weak immune system and signal that the person has AIDS. Learn more about the stages of HIV and how to know whether you’re infected.
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-heading -->
                             </div><!-- /.panel -->
@@ -445,14 +452,14 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                            Dental clinic
+                                            Tuberculosis (TB)
                                         </a>
                                     </h4>
                                 </div><!-- /.panel-heading -->
 
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Praesent rutrum arcu lacus, nec consectetur mauris pellentesque sit amet. Nulla facilisi. Donec tempor nunc in varius fermentum. Nulla eget vulputate neque. Sed ultricies viverra augue, ut accumsan metus malesuada id. Cras ultrices arcu nec mauris consequat, viverra accumsan enim vulputate. Nunc auctor, dolor et aliquet consequat, sapien leo viverra felis, ac gravida purus libero sit amet eros. Nam iaculis augue vitae rhoncus elementum. In hac habitasse platea dictumst. Morbi aliquet adipiscing elit, at convallis massa fringilla et.
+                                        TB bacteria are spread through the air from one person to another. The TB bacteria are put into the air when a person with TB disease of the lungs or throat coughs, sneezes, speaks, or sings. People nearby may breathe in these bacteria and become infected. When a person breathes in TB bacteria, the bacteria can settle in the lungs and begin to grow. From there, they can move through the blood to other parts of the body, such as the kidney, spine, and brain.
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
                             </div><!-- /.panel -->
@@ -461,14 +468,27 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                            Cancer center
+                                            Hepatitis C
                                         </a>
                                     </h4>
                                 </div><!-- /.panel-heading -->
 
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Phasellus mattis dignissim neque vel tincidunt. Nam posuere nisl at erat mollis euismod. Cras diam diam, luctus vitae metus vitae, porttitor porttitor lorem. Integer feugiat justo in lectus dignissim consectetur. Aliquam vel fringilla neque. Pellentesque eget arcu ac ante pulvinar malesuada et id erat. Praesent mattis porta arcu placerat pellentesque. Maecenas ullamcorper dui non est elementum aliquam.
+                                        Hepatitis C is an infection of the liver that results from
+                                        the Hepatitis C virus. Acute Hepatitis C refers to the
+                                        first several months after someone is infected. Acute
+                                        infection can range in severity from a very mild illness
+                                        with few or no symptoms to a serious condition
+                                        requiring hospitalization. For reasons that are not
+                                        known, about 20% of people are able to clear, or
+                                        get rid of, the virus without treatment in the first
+                                        6 months.
+                                        Unfortunately, most people who get infected are not
+                                        able to clear the Hepatitis C virus and develop a chronic,
+                                        or lifelong, infection. Over time, chronic Hepatitis C
+                                        can cause serious health problems including liver
+                                        disease, liver failure, and even liver cancer.
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
                             </div><!-- /.panel -->
@@ -477,14 +497,14 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                            Basic Documentation
+                                            Human papillomavirus (HPV)
                                         </a>
                                     </h4>
                                 </div><!-- /.panel-heading -->
 
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Cras sed nunc eu lectus feugiat ultricies lobortis eget mi. Nam et nulla venenatis, luctus lacus eget, pharetra lacus. Nam facilisis congue nibh et iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel commodo lectus. Curabitur tellus nunc, bibendum viverra quam sed, tempor posuere dui. Aliquam a lectus ligula. Mauris congue, urna ac ullamcorper dapibus, lacus sapien consectetur tortor, vel semper ligula eros ut urna. Quisque egestas et lectus in faucibus.
+                                        Human papillomavirus (HPV) is the most common sexually transmitted infection (STI). HPV is a different virus than HIV and HSV (herpes). HPV is so common that nearly all sexually active men and women get it at some point in their lives. There are many different types of HPV. Some types can cause health problems including genital warts and cancers. But there are vaccines that can stop these health problems from happening.
                                     </div><!-- /.panel-body -->
                                 </div><!-- /.panel-collapse -->
                             </div><!-- /.panel -->
