@@ -15,5 +15,8 @@ Rails.application.routes.draw do
   get '/doctors' => 'doctors#index'
   get '/doctors/:id' => 'doctors#show'
 
+  get '/services' => 'services#index'
+  get '/services/:id' => 'services#show'
+
   get '/maps' => 'maps#index'
 end
