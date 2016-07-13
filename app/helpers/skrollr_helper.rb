@@ -1,0 +1,2 @@
+module SkrollrHelper
+end

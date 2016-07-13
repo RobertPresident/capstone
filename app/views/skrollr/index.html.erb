@@ -1,0 +1,128 @@
+<html>
+<head>
+
+
+	<style type="text/css">
+
+
+		#wall {
+			position:fixed;
+			right:0;
+			bottom:0;
+			left:0;
+			width: 100%;
+		}
+
+		#wall > img {
+			display:block;
+			margin:auto;
+			width: 100%;
+		}
+
+
+		#silo {
+			position:fixed;
+			right:0;
+			bottom:0;
+			left:0;
+		}
+
+		#silo > img {
+			display:block;
+			margin:auto;
+		}
+
+		
+
+		#cell > img {
+			position:absolute;
+			right:0;
+			bottom:0;
+			left:0;
+		}
+
+		#cell > img {
+			display:block;
+			margin:auto;
+			width:100%
+		}
+
+		#free {
+			position:fixed;
+			right:0;
+			bottom:0;
+			left:0;
+			width: 100%;
+		}
+
+		#free > img {
+			display:block;
+			margin:auto;
+			width: 100%;
+		}
+
+		#enter {
+			position:fixed;
+			right:0;
+			bottom:0;
+			left:0;
+			width: 100%;
+		}
+
+		#enter > img {
+			display:block;
+			margin:auto;
+			width: 100%;
+		}
+
+
+	</style>
+</head>
+
+		
+
+		
+
+
+
+
+
+
+<body>
+
+	<div id="wall" data-500-end="opacity:100;" data-top="opacity:0;"  >
+		<%= image_tag "brick-wall.jpg" %>
+	</div>
+
+	<div id="silo" data-500-end="opacity:1;" data-top="opacity:0;" >
+		<%= image_tag "mike_silo.png" %>
+	</div>
+
+	<div id="cell" data-500-top="opacity:50;" data-end="opacity:0;"  >
+		<%= image_tag "jail-cell-bars-psd-449125.png" %>
+	</div>
+
+	<div id="free" data-500-end="opacity:0;" data-top="opacity:1;" >
+		<%= image_tag "free.jpg" %>
+	</div>
+
+	<div id="enter" data-500-top="opacity:0;" data-end="opacity:1;"  >
+		<%= link_to 'SHIELD', '/resources', method: :get, class: "btn btn-default" %>
+	</div>
+
+
+
+	<script type="text/javascript" src="../dist/skrollr.min.js"></script>
+
+	<script type="text/javascript">
+		skrollr.init();
+	</script>
+
+</body>
+
+</html>
+
+
+
+
+
