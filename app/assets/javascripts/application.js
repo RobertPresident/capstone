@@ -12,6 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require skrollr
-//= require skrollr.stylesheets
 //= require_tree .

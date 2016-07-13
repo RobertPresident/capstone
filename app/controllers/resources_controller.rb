@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
   def index
-    render layout: 'special'
+    # render layout: 'special'
   end
 end

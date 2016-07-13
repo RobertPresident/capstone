@@ -19,4 +19,24 @@ Rails.application.routes.draw do
   get '/services/:id' => 'services#show'
 
   get '/maps' => 'maps#index'
+
+  get '/houses' => 'houses#index'
+
+  get '/cms' => 'cms#index'
+
+  get '/crs' => 'crs#index'
+
+  get '/eaes' => 'eaes#index'
+
+  get '/faca' => 'faca#index'
+
+  get '/mc' => 'mc#index'
+
+
+
+
+
+
+
+
 end
