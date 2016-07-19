@@ -8,19 +8,19 @@
         <title>S.H.I.E.L.D.</title>
 
         <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!--plugins css-->
-        <link href="css/owl.carousel.css" rel="stylesheet">
-        <link href="css/owl.theme.css" rel="stylesheet">
-        <link href="css/flexslider.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/css/owl.carousel.css" rel="stylesheet">
+        <link href="/css/owl.theme.css" rel="stylesheet">
+        <link href="/css/flexslider.css" rel="stylesheet">
+        <link href="/css/animate.css" rel="stylesheet">
+        <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!--Revolution slider css-->
-        <link href="rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="css/rev-style.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="/css/rev-style.css" rel="stylesheet" type="text/css" media="screen">
         <!--custom css for only medial template-->
-        <link href="css/medical.css" type="text/css" rel="stylesheet">
+        <link href="/css/medical.css" type="text/css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,6 +63,38 @@
                 </div>
             </div>
         </div>
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/resources">Home</a></li>
+                        <li><a href="/doctors">Doctors</a></li>
+                        <li class="dropdown">
+                            <a href="/services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                               <li><a href="/services">Home</a></li>
+                                <li><a href="/eaes">Education and Employment Services</a></li>
+                                <li><a href="/houses">Housing</a></li>
+                                <li><a href="/mc">Medical Care</a></li>
+                                <li><a href="/cms">Counseling, Mental Health Services, Support Groups</a></li>
+                                <li><a href="/crs">Case Management, Referrals, and Supportive Services</a></li>
+                                <li><a href="/faca">Food and Clothing Assistance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
 
 <%= yield %>
 
