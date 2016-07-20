@@ -19,7 +19,7 @@
                     <tbody>
                         <% @services.each do |service| %>
                             <tr>
-                              <td><h4><a href="/services/<%= service.id %>"><%= service.name %></a></h4></td>
+                              <td><h4><a href="/services/<%= service.id %>" target="_blank"><%= service.name %></a></h4></td>
                               <td><h5> <%= service.address %></h5></td>
                               <td><h5> <%= service.city %></h5></td>
                               <td><h5> <%= service.state %></h5></td>
